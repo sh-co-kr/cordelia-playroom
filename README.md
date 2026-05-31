@@ -26,6 +26,8 @@ Cloudflare Dashboard에서 `Workers & Pages` -> `Create` -> `Pages` -> `Connect 
 
 정적 HTML/CSS/JS만 사용하므로 별도 런타임 의존성이 없습니다.
 
+배포 테스트: Cloudflare Pages 자동 배포 확인용 커밋입니다.
+
 ## 운영 전 확인 사항
 
 현재 객실 상태와 이용 내역은 브라우저의 `localStorage`에 저장됩니다. 즉, 같은 브라우저에서는 사용자 화면과 관리자 화면이 상태를 공유하지만, 서로 다른 기기나 브라우저 사이에서는 데이터가 공유되지 않습니다.
