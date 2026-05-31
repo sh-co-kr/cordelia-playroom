@@ -90,7 +90,7 @@ function renderUserView() {
       const disabled = room.status !== "available" ? "disabled" : "";
       return `
         <button
-          class="room-tile${statusClass}${selected}"
+          class="room-tile user-room-tile${statusClass}${selected}"
           type="button"
           data-room-id="${room.id}"
           aria-pressed="${room.id === state.selectedRoomId}"
@@ -104,7 +104,10 @@ function renderUserView() {
 
   return `
     <main class="phone-shell management-view">
-      <h1 class="screen-title">Cordelia Playroom</h1>
+      <header class="user-header">
+        <p class="user-kicker">Hotel Cordelia</p>
+        <h1 class="screen-title">Cordelia Playroom</h1>
+      </header>
       <section class="room-grid" aria-label="플레이룸 현황">
         ${roomTiles}
       </section>
